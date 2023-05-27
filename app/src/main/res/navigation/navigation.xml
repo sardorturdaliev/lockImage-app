@@ -9,5 +9,35 @@
         android:id="@+id/passwordScreen"
         android:name="com.sardordev.lockimages.presenter.page.PasswordScreen"
         android:label="fragment_password_screen"
-        tools:layout="@layout/fragment_password_screen" />
+        tools:layout="@layout/fragment_password_screen" >
+        <action
+            android:id="@+id/action_passwordScreen_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.sardordev.lockimages.presenter.page.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_galleryScreen"
+            app:destination="@id/galleryScreen" />
+        <action
+            android:id="@+id/action_mainFragment_to_albumsScreen"
+            app:destination="@id/albumsScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryScreen"
+        android:name="com.sardordev.lockimages.presenter.page.GalleryScreen"
+        android:label="fragment_gallery_screen"
+        tools:layout="@layout/fragment_gallery_screen" />
+    <fragment
+        android:id="@+id/albumsScreen"
+        android:name="com.sardordev.lockimages.presenter.page.AlbumsScreen"
+        android:label="fragment_albums_screen"
+        tools:layout="@layout/fragment_albums_screen" >
+        <action
+            android:id="@+id/action_albumsScreen_to_galleryScreen"
+            app:destination="@id/galleryScreen" />
+    </fragment>
 </navigation>

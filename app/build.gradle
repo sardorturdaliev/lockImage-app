@@ -52,6 +52,14 @@ dependencies {
     kapt("androidx.room:room-compiler:$room_version")
     implementation("androidx.room:room-ktx:2.5.0")
 
+
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+
+    implementation 'com.github.khaled2252:pin-view:1.0.0'
+
+    implementation    'com.hanks:passcodeview:0.1.2'
+
+    
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
